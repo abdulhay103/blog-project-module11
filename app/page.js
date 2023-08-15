@@ -3,8 +3,6 @@ import styles from "./home.module.css";
 import Button from "./components/Button";
 
 const page = () => {
-
-  
   return (
     <main>
       <div className={styles.sectionHeader}>
@@ -12,10 +10,10 @@ const page = () => {
       </div>
       <div className={styles.contents}>
         <div>
-        <h1>Pls click the Button bellow and show latest post</h1>
+          <h1>Pls click the Button bellow and show latest post</h1>
         </div>
         <div className={styles.contentsBtn}>
-        <Button>Recent Posts</Button>
+          <Button>Recent Posts</Button>
         </div>
       </div>
     </main>
