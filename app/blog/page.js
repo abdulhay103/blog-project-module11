@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./blog.module.css";
 import postData from "../api/getPosts.js";
@@ -6,7 +7,7 @@ import Link from "next/link";
 
 const page = async () => {
   const allPosts = await postData();
-  console.log(allPosts);
+
   return (
     <main>
       <div className={styles.sectionHeader}>
@@ -16,11 +17,10 @@ const page = async () => {
         {allPosts.map((post) => {
           return (
             <div key={post.id} className={styles.card}>
-              <Link href={"#"} className={styles.cardTitle}>{post.title}</Link>
+              <Link href={`/post/${post.id}`} className={styles.cardTitle}>
+                {post.title}
+              </Link>
               <p>{post.body}</p>
-              <div className={styles.cardBtn}>
-                <Button>Read More</Button>
-              </div>
             </div>
           );
         })}

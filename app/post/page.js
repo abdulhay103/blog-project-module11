@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "./post.module.css";
 
 const page = () => {
   return (
-    <main>
-      <h1>Post Page</h1>
-    </main>
+    <div>
+      <h1>This singgle Post page</h1>
+    </div>
   );
 };
 
