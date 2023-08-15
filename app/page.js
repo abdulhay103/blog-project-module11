@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 
 const page = () => {
   return (
-    <main className={styles.container}>
+    <main>
       <h1>Home Page</h1>
     </main>
   );

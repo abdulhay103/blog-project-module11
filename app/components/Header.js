@@ -1,7 +1,7 @@
 import React from "react";
 import navData from "../utils/navData";
 import Link from "next/link";
-import styles from "./style.module.css";
+import styles from "./componets.module.css";
 
 const Header = () => {
   return (
