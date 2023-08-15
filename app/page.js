@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import styles from "./home.module.css";
-import Button from "./components/Button";
 import { useRouter } from "next/navigation";
+import Button from "./components/Button";
 
 const page = () => {
   const router = useRouter();
