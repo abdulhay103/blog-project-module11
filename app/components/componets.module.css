@@ -9,7 +9,9 @@
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    padding: 15px 25px;
+    padding: 15px 0;
+    width: 85%;
+    margin: 0 auto;
 }
 .links{
     display: flex;
@@ -21,6 +23,7 @@
 .footer{
     width: 100%;
     position: absolute;
+    display: fixed;
     bottom: 0;
     text-align: center;
     background-color: #fff;

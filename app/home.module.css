@@ -1,3 +1,15 @@
-.container{
-    padding: 0px 25px;
+.sectionHeader{
+    text-align: center;
+}
+
+.header{
+    color: rgb(5, 133, 3);
+    font-size: 25px;
+    font-weight: 700;
+text-decoration: underline;
+}
+
+.postArea{
+    display: grid;
+    grid-row: 2;
 }

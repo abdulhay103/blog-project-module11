@@ -11,3 +11,18 @@ body {
   color: var(--text-color);
   background-color: var(--backgroun-color);
 }
+
+.container{
+  padding: 25px 0;
+  width: 85%;
+  margin: 0 auto;
+}
+.loading{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.loadingStyle{
+  padding-top: 40vh;
+}
