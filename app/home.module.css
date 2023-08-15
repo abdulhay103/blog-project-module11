@@ -9,7 +9,10 @@
 text-decoration: underline;
 }
 
-.postArea{
-    display: grid;
-    grid-row: 2;
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
 }
+
