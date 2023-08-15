@@ -11,7 +11,7 @@ const page = async () => {
       <div className={styles.sectionHeader}>
         <h1 className={styles.header}>Recent Post</h1>
       </div>
-      <div>
+      <div className={styles.postArea}>
         {allPosts.map((post) => {
           return (
             <div key={post.id} className={styles.card}>
