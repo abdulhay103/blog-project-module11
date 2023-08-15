@@ -1,0 +1,20 @@
+.postArea{
+    display: grid;
+    gap: 20px;
+    padding: 20px 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+.card{
+background-color: rgb(226, 235, 216);
+padding: 20px;
+border-radius: 10px;
+}
+.cardTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(132, 45, 214)
+}
+.cardBtn{
+    display: flex;
+    justify-content: center;
+}
