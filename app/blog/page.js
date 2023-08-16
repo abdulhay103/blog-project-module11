@@ -4,9 +4,14 @@ import styles from "./blog.module.css";
 import postData from "../api/getPosts.js";
 import Button from "../components/Button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const page = async () => {
   const allPosts = await postData();
+  const btnNavigate = (id) => {
+    const route = useRouter();
+    route.push(`/blog/${id}`);
+  };
 
   return (
     <main>
@@ -21,7 +26,16 @@ const page = async () => {
                 {post.title.slice(0, 30)}
               </Link>
               <p>{post.body.slice(0, 100)}</p>
-              <Button>Read More</Button>
+              {/* <Button
+                handler={() => {
+                  btnNavigate(post.id);
+                }}
+              >
+                Read More
+              </Button> */}
+              {/* <Button handler={() => useRouter().push(`/blog/${post.id}`)}>
+                Read More
+              </Button> */}
             </div>
           );
         })}

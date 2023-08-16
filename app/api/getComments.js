@@ -3,5 +3,7 @@ export default async function getComents(id) {
     `https://jsonplaceholder.typicode.com/posts/${id}/comments`
   );
   if (!res.ok) {
+    throw new Error("There was an error!");
   }
+  return res.json();
 }
