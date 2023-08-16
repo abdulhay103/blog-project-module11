@@ -18,9 +18,10 @@ const page = async () => {
           return (
             <div key={post.id} className={styles.card}>
               <Link href={`/post/${post.id}`} className={styles.cardTitle}>
-                {post.title}
+                {post.title.slice(0, 30)}
               </Link>
-              <p>{post.body}</p>
+              <p>{post.body.slice(0, 100)}</p>
+              <Button>Read More</Button>
             </div>
           );
         })}
