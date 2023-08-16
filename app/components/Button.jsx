@@ -2,7 +2,8 @@
 import React from "react";
 import styles from "./componets.module.css";
 
-const Button = ({ children, handler }) => {
+const Button = (props) => {
+  const { children, handler } = props;
   return (
     <button onClick={() => handler()} className={styles.btn}>
       {children}
