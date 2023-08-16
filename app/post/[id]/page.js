@@ -7,7 +7,6 @@ const page = async ({ params }) => {
   const id = params.id;
   const post = await getSinglePost(id);
   const comments = await getComents(id);
-  console.log(comments);
   return (
     <div className=" border">
       <div>
