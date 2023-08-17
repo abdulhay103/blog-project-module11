@@ -1,14 +1,9 @@
 "use client";
 import React from "react";
 import styles from "./home.module.css";
-import { useRouter } from "next/navigation";
-import Button from "./components/Button";
+import Link from "next/link";
 
 const page = () => {
-  const router = useRouter();
-  const navigator = () => {
-    router.push("/blog");
-  };
   return (
     <main>
       <div className={styles.sectionHeader}>
@@ -19,7 +14,7 @@ const page = () => {
           <h1>Pls click the Button bellow and show latest post</h1>
         </div>
         <div className={styles.contentsBtn}>
-          <Button handler={navigator}>Recent Posts</Button>
+          <Link href="/blog">Click Me</Link>
         </div>
       </div>
     </main>
