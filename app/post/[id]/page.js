@@ -1,3 +1,4 @@
+"use client";
 import getComents from "@/app/api/getComments";
 import getSinglePost from "@/app/api/getSinglePost";
 import Comment from "@/app/components/Comment";
@@ -7,6 +8,7 @@ const page = async ({ params }) => {
   const id = params.id;
   const post = await getSinglePost(id);
   const comments = await getComents(id);
+
   return (
     <div className=" border">
       <div>
@@ -15,7 +17,7 @@ const page = async ({ params }) => {
       </div>
       <div className=" py-6 border">
         <h2 className=" text-center">Comments</h2>
-        <Suspense fallback={<h3>Loading comments...</h3>}>
+        <Suspense fallback={<h3>Loading comments123...</h3>}>
           <Comment comments={comments} />
         </Suspense>
       </div>
