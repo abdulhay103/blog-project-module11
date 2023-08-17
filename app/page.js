@@ -14,7 +14,12 @@ const page = () => {
           <h1>Pls click the Button bellow and show latest post</h1>
         </div>
         <div className={styles.contentsBtn}>
-          <Link href="/blog">Click Me</Link>
+          <Link
+            className=" py-2 px-4 bg-amber-500 rounded text-white"
+            href="/blog"
+          >
+            Click Me
+          </Link>
         </div>
       </div>
     </main>
